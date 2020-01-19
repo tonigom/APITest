@@ -16,6 +16,11 @@ namespace APITest
             CreateHostBuilder(args).Build().Run();
         }
 
+        /// <summary>
+        /// prova comentari
+        /// </summary>
+        /// <param name="args"></param>
+        /// <returns></returns>
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
