@@ -9,6 +9,7 @@ namespace APITest.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
@@ -23,6 +24,10 @@ namespace APITest.Controllers
             _logger = logger;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
